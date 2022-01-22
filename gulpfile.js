@@ -65,5 +65,4 @@ exports.default = gulp.series(
     clear,
     gulp.parallel(html, scss, font, img),
     gulp.parallel(watch, server)
-    // gulp.parallel(watch, server)
 );

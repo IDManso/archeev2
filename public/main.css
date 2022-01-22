@@ -176,12 +176,12 @@ header, nav, section, footer {
 }
 .showcase .info {
   display: flex;
+  padding: 100px 0 175px 0;
 }
 .showcase .info .rating {
   position: relative;
   flex: 0 77%;
   max-width: 77%;
-  padding-top: 100px;
 }
 .showcase .info .rating .title {
   color: #2C2321;
@@ -190,6 +190,12 @@ header, nav, section, footer {
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 2%;
+}
+.showcase .info .rating .title span::before {
+  content: url(img/rate.svg);
+  margin: 0 5px 0 5px;
+  width: 16px;
+  height: 16px;
 }
 .showcase .info .rating .description {
   color: #61594D;
@@ -221,16 +227,15 @@ header, nav, section, footer {
   letter-spacing: 2%;
   background-color: #D6680F;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  border: 2px solid #FFF;
-  padding: 12px 9px;
+  width: 45px;
+  height: 45px;
+  padding: 14px 11px;
 }
 .showcase .info .phone {
   position: relative;
   flex: 0 23%;
   max-width: 23%;
-  padding-top: 100px;
+  padding-top: 55px;
 }
 .showcase .info .phone .number a {
   color: #D6680F;
@@ -245,6 +250,152 @@ header, nav, section, footer {
   font-family: "HelveticaNowDisplay", sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.intro {
+  padding-bottom: 120px;
+}
+.intro .search-price {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 30px 50px 150px rgba(39, 31, 26, 0.2);
+  padding: 50px;
+  margin: -100px 0 120px 0;
+}
+.intro .search-price h4 {
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #2C2321;
+  margin: 0 0 20px 0;
+}
+.intro .search-price form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.intro .search-price form input {
+  flex-grow: 1;
+  min-width: 100px;
+  font-family: "HelveticaNowDisplay", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(97, 89, 77, 0.6);
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px 0 20px;
+  margin: 0 20px 0 0;
+  height: 60px;
+  outline: none;
+}
+.intro .search-price form input:nth-child(1) {
+  background-image: url(img/map-pin.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%;
+}
+.intro .search-price form input:nth-child(2) {
+  background-image: url(img/home.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%;
+}
+.intro .search-price form input:nth-child(3) {
+  background-image: url(img/dollar-sign.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%;
+}
+.intro .search-price form button {
+  flex-grow: 0;
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #D6680F;
+  border: none;
+  border-radius: 6px;
+  white-space: nowrap;
+  padding: 20px 40px;
+}
+.intro .advantage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.intro .advantage .block {
+  width: 33.333%;
+}
+.intro .advantage .block .title {
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 30px 0 0 0;
+}
+.intro .advantage .block .text {
+  font-family: "HelveticaNowDisplay", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #61594D;
+  margin: 10px 0 30px 0;
+}
+.intro .advantage .block .total {
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: underline;
+  color: #61594D;
+}
+.intro .advantage .block .total.active {
+  color: #D6680F;
+}
+
+.about {
+  background-color: #FDFBF6;
+}
+.about .container {
+  padding: 75px 0;
+}
+.about .container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about .container .row .back {
+  width: 60%;
+}
+.about .container .row .back img {
+  position: relative;
+  margin-left: -130px;
+  max-width: 700px;
+}
+.about .container .row .text {
+  width: 40%;
+}
+.about .container .row .text h3 {
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #2C2321;
+  margin: 0;
+}
+.about .container .row .text p {
+  font-family: "HelveticaNowDisplay", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #61594D;
+  margin: 20px 0 40px 0;
+}
+.about .container .row .text .button {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #D6680F;
+  border-radius: 6px;
+  padding: 20px 40px;
 }
 
 a {
@@ -287,10 +438,6 @@ ul, li {
     margin: 0 30px;
   }
 }
-.showcase .info .rating, .showcase .info .phone {
-  padding-top: 50px;
-}
-
 @media all and (max-width: 969px) {
   .showcase .text {
     text-align: center;
@@ -306,8 +453,52 @@ ul, li {
     position: relative;
     max-width: 70%;
   }
-  .showcase .info .rating, .showcase .info .phone {
-    padding-top: 0;
+
+  .intro .search-price h4 {
+    text-align: center;
+  }
+  .intro .search-price form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro .search-price form input {
+    margin-bottom: 20px;
+  }
+  .intro .search-price form input:nth-child(2) {
+    margin-right: 0;
+  }
+  .intro .search-price form input:nth-child(3) {
+    width: 100%;
+    margin-right: 0;
+  }
+  .intro .advantage .block {
+    padding: 0 15px;
+  }
+  .intro .advantage .block:first-child {
+    padding-left: 0;
+  }
+  .intro .advantage .block:last-child {
+    padding-right: 0;
+  }
+  .about .container .row {
+    padding: 0 15px 0 15px;
+  }
+  .about .container .row .back {
+    text-align: center;
+    padding: 0 0 40px 0;
+    width: 100%;
+  }
+  .about .container .row .back img {
+    margin-left: 0;
+    max-width: 600px;
+    width: 100%;
+  }
+  .about .container .row .text {
+    text-align: center;
+    width: 100%;
+  }
+  .about .container .row .text h3 {
+    padding: 0 80px;
   }
 }
 @media all and (max-width: 768px) {
@@ -336,6 +527,39 @@ ul, li {
   .showcase .info .phone {
     flex: 0 40%;
     max-width: 40%;
+  }
+
+  .intro .advantage {
+    flex-wrap: wrap;
+  }
+  .intro .advantage .block {
+    width: 50%;
+    padding: 15px;
+  }
+  .intro .advantage .block:nth-child(2) {
+    padding-right: 0;
+  }
+  .about .container .row .text h3 {
+    padding: 0 40px;
+  }
+}
+@media all and (max-width: 576px) {
+  .intro .search-price h4 {
+    text-align: center;
+  }
+  .intro .search-price form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro .search-price form input {
+    margin-bottom: 20px;
+  }
+  .intro .search-price form input:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .about .container .row .text h3 {
+    padding: 0;
   }
 }
 @media all and (max-width: 480px) {
